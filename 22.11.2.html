@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ooo</title>
+</head>
+<body>
+    <button id = "btn1">Entering a number</button>
+    <button id = "btn2">fulfill mathematical expectation</button>
+    <textarea id ="txt" placeholder="Enter a number:"></textarea>
+    <b style="font-size: 20px;">Данный скрипт этого сайта делает только математические ожидания и округляет число до целого!</b>
+
+    <script>
+        let btn1 = document.getElementById("btn1");
+        let btn2 = document.getElementById("btn2");
+        let txt = document.getElementById("txt");
+
+        let arr = [];
+        let random = 1;
+        let sum = 0;
+        
+        btn1.onclick = function(){
+            arr.push(txt.value);
+        }
+        btn1.onclick = function(){
+            random = 1/arr.length;
+            for(let i = 0; i< arr.length; i++){
+                sum += arr[i] * random;
+                console.log(sum);
+            }
+            alert(Math.random(sum));
+        }
+    </script>
+</body>
+</html>
